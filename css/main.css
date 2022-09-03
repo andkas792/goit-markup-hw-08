@@ -13,18 +13,18 @@
 	--color-logo-black: #000000;
 	--color-bg-hero: #2f303a;
 	--color-btn-prtf: #f5f4fa;
+	--primary-bg-color: #F5F5F5;
+	--secondary-bg-color: #F5F4FA;
 }
 body {
 	color: var(--main-text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.03em;
+	background: var(--primary-bg-color);
 }
 
-.list,
-.feature-list,
-.work-list,
-.team-list {
+.list {
 	list-style: none;
 }
 /* work with header */
@@ -122,6 +122,10 @@ body {
 }
 
 /* Team */
+.team {
+	background: var(--secondary-bg-color);
+}
+
 .team-member {
 	color: var(--secondary-text-color);
 	font-weight: 500;
