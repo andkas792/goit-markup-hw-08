@@ -13,9 +13,10 @@
 	--color-logo-black: #000000;
 	--color-bg-hero: #2f303a;
 	--color-btn-prtf: #f5f4fa;
-	--primary-bg-color: #f5f5f5;
+	--primary-bg-color: #ffffff;
 	--secondary-bg-color: #f5f4fa;
 	--header-border-color: #ececec;
+	--border-color: #EEEEEE;
 }
 
 .visually-hidden {
@@ -51,7 +52,6 @@ ul {
 	margin: 0;
 }
 
-
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -69,8 +69,8 @@ ul {
 }
 
 .header {
-	height: 79px;
-	display: flex;
+	/* height: 79px; */
+	/* display: flex; */
 	border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -144,7 +144,7 @@ nav.flex-container {
 	text-transform: uppercase;
 	width: 696px;
 	text-align: center;
-	margin:0 auto;
+	margin: 0 auto;
 }
 
 .button {
@@ -176,12 +176,12 @@ nav.flex-container {
 }
 
 .section-title {
-	/* visibility: hidden; */
 	color: var(--secondary-text-color);
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 .feature-list {
@@ -278,7 +278,33 @@ nav.flex-container {
 	color: var(--accent-color);
 }
 
+footer > .container {
+	padding: 60px 15px;
+}
+
+a.logo-footer {
+	display: block;
+	margin-bottom: 20px;
+}
+
+p.location {
+	margin-bottom: 9px;
+}
+
+a.link-footer {
+	display: block;
+	margin-bottom: 9px;
+}
+
 /* PORTFOLIO */
+
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 34px;
+}
 
 .button-portfolio {
 	color: var(--secondary-text-color);
@@ -290,6 +316,8 @@ nav.flex-container {
 	text-align: center;
 	cursor: pointer;
 	border: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
 
 .button-portfolio:hover,
@@ -300,6 +328,18 @@ nav.flex-container {
 
 .link-portfolio {
 	text-decoration: none;
+}
+
+.work-list {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.title-description {
+	border: 1px solid var(--border-color);
+	padding: 20px 24px;
 }
 
 .work-title {
