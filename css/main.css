@@ -69,8 +69,6 @@ ul {
 }
 
 .header {
-	/* height: 79px; */
-	/* display: flex; */
 	border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -92,6 +90,8 @@ nav.flex-container {
 	font-size: 26px;
 	line-height: 1.19;
 	text-decoration: none;
+	padding: 25px 0;
+	display: block;
 }
 .logo-web {
 	color: var(--accent-color);
@@ -338,6 +338,7 @@ a.link-footer {
 }
 
 .title-description {
+	border-top: none;
 	border: 1px solid var(--border-color);
 	padding: 20px 24px;
 }
@@ -348,6 +349,7 @@ a.link-footer {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	margin-bottom: 4px;
 }
 
 .description-work {
