@@ -389,7 +389,7 @@ p.location {
 }
 
 a.link-footer {
-	display: inline-block;
+	display: block;
 	margin-bottom: 9px;
 }
 
