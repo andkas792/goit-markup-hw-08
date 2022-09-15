@@ -16,7 +16,8 @@
 	--primary-bg-color: #ffffff;
 	--secondary-bg-color: #f5f4fa;
 	--header-border-color: #ececec;
-	--border-color: #EEEEEE;
+	--border-color: #eeeeee;
+	--color-text-social-links: #afb1b8;
 }
 
 .visually-hidden {
@@ -62,7 +63,6 @@ ul {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	/* outline: 1px solid teal; */
 }
 
 /* work with header */
@@ -96,8 +96,8 @@ nav.flex-container {
 	line-height: 1.19;
 	text-decoration: none;
 	padding: 25px 0;
-	display: block;
 }
+
 .logo-web {
 	color: var(--accent-color);
 }
@@ -123,6 +123,7 @@ nav.flex-container {
 
 /* auth-nav  */
 .contact-link {
+	display: flex;
 	color: var(--main-text-color);
 	font-weight: 500;
 	line-height: 1.14;
@@ -135,10 +136,33 @@ nav.flex-container {
 	color: var(--accent-color);
 }
 
+.mail::before {
+	content: "";
+	margin-right: 10px;
+	width: 16px;
+	height: 12px;
+	padding-top: 2px;
+	background-image: url(../images/mail.svg);
+	background-repeat: no-repeat;
+}
+
+.smartphone::before {
+	content: "";
+	margin-right: 10px;
+	width: 10px;
+	height: 16px;
+	background-image: url(../images/smartphone.svg);
+	background-repeat: no-repeat;
+}
+
 /* hero */
 .hero {
-	background: var(--color-bg-hero);
+	max-width: 1600px;
+	background-color: var(--color-bg-hero);
+	margin-left: auto;
+	margin-right: auto;
 	padding: 200px 0;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 .hero-title {
 	color: var(--main-white-color);
@@ -171,6 +195,39 @@ nav.flex-container {
 }
 
 /* Features */
+
+.feature-list-icon {
+	height: 120px;
+	background-color: var(--color-btn-prtf);
+}
+
+.antenna {
+	width: 270px;
+	background-image: url(../images/antenna.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.clock {
+	width: 270px;
+	background-image: url(../images/clock.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.diagram {
+	width: 270px;
+	background-image: url(../images/diagram.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.astronaut {
+	width: 270px;
+	background-image: url(../images/astronaut.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 .section {
 	padding: 94px 0;
@@ -205,7 +262,6 @@ nav.flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	margin-top: 50px;
 }
 
 .title {
@@ -215,6 +271,7 @@ nav.flex-container {
 	line-height: 1.14;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	margin-top: 30px;
 }
 
 .description {
@@ -243,6 +300,16 @@ nav.flex-container {
 	background: var(--main-white-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 3px rgba(0, 0, 0, 0.12);
 	border-radius: 0px 0px 4px 4px;
+	padding-bottom: 30px;
+}
+
+.member-card-social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 16px;
+	color: var(--color-text-social-links);
 }
 
 .member-team {
@@ -250,7 +317,36 @@ nav.flex-container {
 	text-align: center;
 }
 
+.social-link {
+	display: block;
+	padding: 12px;
+	height: 44px;
+	border-radius: 50%;
+}
+
+/* Clients list */
+
+.clients-list {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.client-link {
+	display: block;
+	width: 170px;
+	height: 92px;
+	padding: 16px 32px;
+	border: 1px solid #afb1b8;
+}
+
 /* footer */
+.flex-container {
+	display: flex;
+	gap: 70px;
+	align-items: baseline;
+}
+
 .footer {
 	padding: 60px 0;
 	background: var(--color-bg-hero);
@@ -293,8 +389,26 @@ p.location {
 }
 
 a.link-footer {
-	display: block;
+	display: inline-block;
 	margin-bottom: 9px;
+}
+
+
+.footer-title {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--main-white-color);
+}
+
+
+.footer-social-link {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-top: 20px;
+	color: var(--main-white-color);
 }
 
 /* PORTFOLIO */
@@ -302,7 +416,6 @@ a.link-footer {
 .filter {
 	display: flex;
 	flex-wrap: wrap;
-	/* gap: 8px; */
 	justify-content: center;
 	margin-bottom: 50px;
 }
@@ -310,7 +423,6 @@ a.link-footer {
 .btn:not(:first-child) {
 	margin-left: 8px;
 }
-
 
 .button-portfolio {
 	color: var(--secondary-text-color);
@@ -344,7 +456,6 @@ a.link-footer {
 .work-list-item {
 	width: calc((100% - 60px) / 3);
 }
-
 
 .title-description {
 	border-top: none;
