@@ -65,6 +65,10 @@ ul {
 	padding-right: 15px;
 }
 
+.section {
+	padding: 94px 0;
+}
+
 /* work with header */
 
 .header .flex-container {
@@ -196,41 +200,12 @@ nav.flex-container {
 
 /* Features */
 
-.feature-list-icon {
+.feature-icon {
+	width: 270px;
 	height: 120px;
-	background-color: var(--color-btn-prtf);
-}
-
-.antenna {
-	width: 270px;
-	background-image: url(../images/antenna.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.clock {
-	width: 270px;
-	background-image: url(../images/clock.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.diagram {
-	width: 270px;
-	background-image: url(../images/diagram.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.astronaut {
-	width: 270px;
-	background-image: url(../images/astronaut.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.section {
-	padding: 94px 0;
+	background-color: var(--secondary-bg-color);
+	padding: 25px 100px;
+	border-radius: 4px;
 }
 
 .features.section {
@@ -393,7 +368,6 @@ a.link-footer {
 	margin-bottom: 9px;
 }
 
-
 .footer-title {
 	font-style: normal;
 	font-size: 14px;
@@ -401,7 +375,6 @@ a.link-footer {
 	text-transform: uppercase;
 	color: var(--main-white-color);
 }
-
 
 .footer-social-link {
 	display: flex;
