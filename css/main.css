@@ -189,7 +189,8 @@ nav.flex-container {
 
 /* Features */
 
-.feature-icon {
+.feature-icon-div {
+	display: flex;
 	width: 270px;
 	height: 120px;
 	background-color: var(--secondary-bg-color);
