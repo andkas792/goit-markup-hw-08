@@ -245,12 +245,7 @@ nav.flex-container {
 	gap: 30px;
 }
 
-.work-list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-	margin-top: 50px;
-}
+
 
 .title {
 	color: var(--secondary-text-color);
@@ -499,6 +494,8 @@ a.link-footer {
 .work-list {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 30px;
+	margin-top: 50px;
 }
 
 .work-list-item {
