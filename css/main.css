@@ -109,12 +109,23 @@ nav.flex-container {
 	color: var(--accent-color);
 }
 
-.logo:hover,.logo:focus {
-	background: linear-gradient( grey, green);
-	opacity: 0.6;
-	border-radius: 50%;
-	color: #fff;
+.logo:hover span {
+	text-shadow: -4px -8px 7px rgba(142, 135, 89, 1);
 	transition: .5s all;
+	color: var(--color-logo-black);
+}
+
+.logo:focus span {
+	text-shadow: -4px -8px 7px rgba(142, 135, 89, 1);
+	transition: .5s all;
+	color: var(--color-logo-black);
+}
+
+.logo:hover,
+.logo:focus{
+	transition: .5s all;
+	text-shadow: -4px -8px 7px rgba(142, 135, 89, 1);
+	color: var(--accent-color);
 }
 
 /* site-nav */
