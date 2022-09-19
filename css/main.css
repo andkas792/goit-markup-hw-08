@@ -65,6 +65,10 @@ ul {
 	padding-right: 15px;
 }
 
+.flex-container {
+	display: flex;
+}
+
 .section {
 	padding: 94px 0;
 }
@@ -354,9 +358,7 @@ nav.flex-container {
 }
 
 /* footer */
-.flex-container {
-	display: flex;
-}
+
 
 .footer {
 	padding: 60px 0;
