@@ -242,7 +242,16 @@ nav.flex-container {
 /* What we are doing */
 
 .do-list {
+	display: flex;
 	padding-top: 0;
+}
+
+.do-list-item {
+	width: calc((100% - 60px) / 3);
+}
+
+.do-list-item:not(:last-child) {
+	margin-right: 30px;
 }
 
 .section-title {
@@ -253,7 +262,6 @@ nav.flex-container {
 	text-align: center;
 	margin-bottom: 50px;
 }
-
 
 .title {
 	color: var(--secondary-text-color);
@@ -499,7 +507,7 @@ a.link-footer {
 	text-decoration: none;
 }
 
-.work-list {
+.work-list-portfolio {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
