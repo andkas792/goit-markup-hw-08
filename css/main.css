@@ -495,13 +495,12 @@ a.link-footer {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	margin-top: 50px;
 }
 
-.work-list-item {
+/* .work-list-item {
 	width: calc((100% - 60px) / 3);
 	
-}
+} */
 
 .link-portfolio {
 	display: block;
