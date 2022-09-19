@@ -126,7 +126,7 @@ nav.flex-container {
 
 .auth-nav	{
 	margin-left: auto;
-	gap: 30px;
+	gap:30px;
 }
 
 
@@ -354,14 +354,17 @@ nav.flex-container {
 }
 
 /* footer */
-.footer-container {
+.flex-container {
 	display: flex;
-	gap:70px;
 }
 
 .footer {
 	padding: 60px 0;
 	background: var(--color-bg-hero);
+}
+
+.footer-links {
+	margin-left: 70px;
 }
 
 .logo-footer {
