@@ -284,9 +284,6 @@ nav.flex-container {
 
 .team-list {
 	display: flex;
-	/* flex-wrap: wrap; */
-	/* gap: 30px; */
-	/* margin-top: 50px; */
 }
 
 .team-card {
@@ -301,7 +298,8 @@ nav.flex-container {
 }
 
 .team-member {
-	padding: 30px 32px;
+	display: flex;
+	flex-direction: column;
 }
 
 .team-name {
@@ -310,7 +308,6 @@ nav.flex-container {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
-	margin-top: 0;
 	text-transform: none;
 }
 
@@ -325,9 +322,20 @@ nav.flex-container {
 .team-socials {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	color: var(--color-text-social-links);
 	margin-top: 16px;
+	margin-bottom: 30px;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.team-social {
+	width: calc((100%-30px)/4);
+}
+
+.team-social:not(:last-child) {
+	margin-right: 10px;
 }
 
 .social-link {
@@ -457,15 +465,21 @@ a.link-footer {
 
 .footer-social-link {
 	display: flex;
-	gap: 10px;
-	align-items: center;
 	margin-top: 20px;
 	color: var(--main-white-color);
 }
 
+.social-links {
+	width: calc((100% - 30px) / 4);
+}
+
+.social-links:not(:last-child) {
+	margin-right: 10px;
+
+}
+
 .footer .social-link {
 	background-color: rgb(255 255 255 / 10%);
-	border-radius: 50%;
 }
 
 .footer .social-link:hover,
