@@ -500,10 +500,12 @@ a.link-footer {
 
 .work-list-item {
 	width: calc((100% - 60px) / 3);
+	
 }
 
 .link-portfolio {
 	display: block;
+	height: 100%;
 }
 
 .link-portfolio:hover,
@@ -513,9 +515,13 @@ a.link-footer {
 }
 
 .title-description {
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	border-top: none;
 	border: 1px solid var(--border-color);
-	padding: 20px 24px;
+	/* padding: 20px 24px; */
 }
 
 .work-title {
@@ -525,10 +531,12 @@ a.link-footer {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	margin-bottom: 4px;
+	margin-left: 24px;
 }
 
 .description-work {
 	color: var(--main-text-color);
 	font-size: 16px;
 	line-height: 1.88;
+	margin-left: 24px;
 }
