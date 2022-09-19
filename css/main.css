@@ -32,6 +32,7 @@
 }
 
 body {
+	position: relative;
 	color: var(--main-text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
@@ -80,6 +81,9 @@ ul {
 }
 
 .header {
+	position: fixed;
+	width: 100%;
+	background-color: var(--main-white-color);
 	border-bottom: 1px solid var(--header-border-color);
 }
 
