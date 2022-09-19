@@ -354,8 +354,9 @@ nav.flex-container {
 }
 
 /* footer */
-.flex-container {
+.footer-container {
 	display: flex;
+	gap:70px;
 }
 
 .footer {
