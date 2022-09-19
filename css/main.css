@@ -105,7 +105,7 @@ nav.flex-container {
 	color: var(--accent-color);
 }
 
-.logo:hover {
+.logo:hover,.logo:focus {
 	background: linear-gradient( grey, green);
 	opacity: 0.6;
 	border-radius: 50%;
@@ -317,7 +317,7 @@ nav.flex-container {
 	height: 44px;
 	color: inherit;
 	fill: currentColor;
-	/* border-radius: 50%; */
+	border-radius: 50%;
 }
 
 .social-link:hover,
@@ -325,7 +325,6 @@ nav.flex-container {
 	transition: 0.5s all;
 	fill: var(--main-white-color);
 	background-color: var(--accent-color);
-	border-radius: 50%;
 }
 
 .social-icon {
