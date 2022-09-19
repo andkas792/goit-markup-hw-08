@@ -239,9 +239,10 @@ nav.flex-container {
 	width: 70px;
 	height: 70px;
 }
+/* What we are doing */
 
-.features.section {
-	padding-bottom: 0;
+.do-list {
+	padding-top: 0;
 }
 
 .section-title {
