@@ -81,8 +81,8 @@ ul {
 }
 
 .header {
-	position: fixed;
-	width: 100%;
+	/* position: fixed; */
+	/* width: 100%; */
 	background-color: var(--main-white-color);
 	border-bottom: 1px solid var(--header-border-color);
 }
@@ -414,6 +414,9 @@ nav.flex-container {
 
 /* footer */
 
+.footer .flex-container {
+	align-items: baseline;
+}
 
 .footer {
 	padding: 60px 0;
