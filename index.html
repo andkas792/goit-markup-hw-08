@@ -56,7 +56,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-					<button type="button" class="button">Замовити послугу</button>
+					<button data-open-modal type="button" class="button">Замовити послугу</button>
 				</div>
 			</section>
 			<!-- Features -->
@@ -108,11 +108,18 @@
 				<div class="container">
 					<h2 class="section-title">Чим ми займаємося</h2>
 					<ul class="do-list list">
-						<li class="do-list-item"><img src="./images/img1.jpg" alt="web-development" width="370" height="294" /></li>
-						<li class="do-list-item"
-							><img src="./images/img2.jpg" alt="mobile-application" width="370" height="294"
-						/></li>
-						<li class="do-list-item"><img src="./images/img3.jpg" alt="something-else" width="370" height="294" /></li>
+						<li class="do-list-item">
+							<img src="./images/img1.jpg" alt="web-development" width="370" height="294" />
+							<h3 class="do-list-title">Десктопні Додатки</h3>
+						</li>
+						<li class="do-list-item">
+							<img src="./images/img2.jpg" alt="mobile-application" width="370" height="294" />
+							<h3 class="do-list-title">Мобільні додатки</h3>
+						</li>
+						<li class="do-list-item">
+							<img src="./images/img3.jpg" alt="something-else" width="370" height="294" />
+							<h3 class="do-list-title">Дизайнерські рішення</h3>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -368,5 +375,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="btn-modal" type="button" data-modal-close>
+					<svg class="icon-close">
+						<use href="./images/sprite1.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
