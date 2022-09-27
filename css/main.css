@@ -289,7 +289,13 @@ nav.flex-container {
 .icon-close {
 	width: 11px;
 	height: 11px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.btn-modal:hover .icon-close,
+.btn-modal:focus .icon-close {
+	fill: var(--accent-color);
+} 
 
 /* Features */
 
@@ -443,9 +449,7 @@ nav.flex-container {
 	border-radius: 0 0 4px 4px;;
 }
 
-.team-card:not(:last-child) {
-	/* margin-right: 30px; */
-}
+
 
 .team-member {
 	display: flex;
@@ -638,6 +642,69 @@ a.link-footer {
 .footer .social-link:focus {
 	background-color: var(--accent-color);
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe {
+	margin-left: auto;
+}
+
+.footer-title {
+	margin-bottom: 20px;
+}
+
+.footer-btn {
+	display: flex;
+	align-items: end;
+}
+
+.footer-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 200px;
+	height: 50px;
+	margin-left: 12px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--main-white-color);
+	background-color: var(--accent-color);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background-color: green;
+}
+
+.footer-label-input {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-email {
+	width: 358px;
+	height: 50px;
+	padding-left: 15px;
+	color: var(--contacts-footer);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	background-color: rgba(47, 48, 58, 1);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+.icon-send {
+	width: 24px;
+	height: 24px;
 }
 
 /* PORTFOLIO */
