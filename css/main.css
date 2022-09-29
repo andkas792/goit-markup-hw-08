@@ -325,18 +325,15 @@ nav.flex-container {
 }
 
 .input-wrapper {
+	display: flex;
+	flex-direction: column;
 	position: relative;
-	margin-top: 4px;
 	width: 448px;
-}
-
-.div-form {
 	margin-bottom: 10px;
 }
 
+
 .form-label {
-	display: flex;
-	flex-direction: column;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.17;
@@ -416,7 +413,7 @@ nav.flex-container {
 .form-icon {
 	position: absolute;
 	left: 12px;
-	top: 11px;
+	bottom: 11px;
 	width: 18px;
 	height: 18px;
 	
