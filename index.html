@@ -449,11 +449,11 @@
 						</li>
 					</ul>
 				</div>
-				<form class="footer-subscribe">
+				<form class="footer-subscribe" autocomplete="off">
 					<div class="footer-btn">
 						<div class="footer-label-input">
 							<label class="footer-title" for="email">Підпишіться на розсилку</label>
-							<input class="input-email" type="email" id="email" placeholder="E-mail"></input>
+							<input class="input-email" name="email" type="email" id="email" placeholder="E-mail"></input>
 						</div>
 						<button type="submit" class="footer-button">Підписатися
 							<svg class="icon-send">
@@ -471,37 +471,47 @@
 						<use href="./images/sprite1.svg#icon-close"></use>
 					</svg>
 				</button>
-				<form>
-					<div class="modal-form" role="group">
-						<p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+				<p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+					<form autocomplete="off">
+						<div class="div-form">
 						<label class="form-label" for="name">Ім'я
-							<div class="div-input">
-								<input class="form-input" type="text" id="name">
-								<svg class="form-icon">
-									<use href="./images/sprite1.svg#icon-person"></use>
-								</svg>
-							</div>							
-						</label>
+								<div class="input-wrapper">
+									<input class="form-input" name="name" type="text" id="name">
+									<svg class="form-icon">
+										<use href="./images/sprite1.svg#icon-person"></use>
+									</svg>
+								</div>
+							</label>
+						</div>							
+						<div class="div-form">
 						<label class="form-label" for="tel">Телефон
-							<div class="div-input">
-								<input class="form-input" type="tel" id="tel">
+							<div class="input-wrapper">
+								<input class="form-input" name="phone" type="tel" id="tel">
 								<svg class="form-icon">
 									<use href="./images/sprite1.svg#icon-phone"></use>
 								</svg>
-							</div>					
-						</label>
+								</label>
+							</div>	
+						</div>					
+						<div class="div-form">
 						<label class="form-label" for="mail">Пошта
-							<div class="div-input">
-								<input class="form-input" type="email" id="mail">
+							<div class="input-wrapper">
+								<input class="form-input" name="mail" type="email" id="mail">
 								<svg class="form-icon">
 									<use href="./images/sprite1.svg#icon-email"></use>
 								</svg>
-							</div>
-						</label>
+								</label>
+							</div>	
+						</div>
 						<label class="form-label" for="comment">Коментар
 							<textarea class="form-textarea" id="comment" placeholder="Введіть текст"></textarea>
 						</label>
-					</div>
+						<div class="accept">
+							<input type="checkbox" name="accept" id="accept">
+							<label class="form-accept" for="accept">Погоджуюся з розсилкою та приймаю  
+								<a class="form-link" href="/"> Умови договору</a>
+							</label>
+						</div>
 					<button class="modal-form-btn" type="submit">Відправити</button>
 				</form>
 			</div>
