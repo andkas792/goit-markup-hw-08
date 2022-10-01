@@ -70,7 +70,7 @@ ul {
 }
 
 .container {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -339,6 +339,7 @@ nav.flex-container {
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	margin-top: 4px;
 	outline: none;
 	padding-left: 42px;
 	cursor: pointer;
@@ -431,6 +432,7 @@ nav.flex-container {
 	align-items: center;
 	margin-right: 4px;
 }
+
 
 .checkbox-input {
 	/* appearance: none;
