@@ -1,0 +1,27 @@
+.feature-list {
+    display: flex;
+}
+
+.feature-list-item {
+    height: auto;
+    width: calc((100% - 90px) / 4);
+}
+
+.feature-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature-icon-div {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+}
