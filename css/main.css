@@ -17,6 +17,19 @@
   --bg-color-btn: #188ce8;
 }
 
+.body-face,
+.body-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -80,6 +93,15 @@ ul {
   padding: 94px 0;
 }
 
+.section-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .header .flex-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -100,10 +122,10 @@ nav.flex-container {
 }
 
 .logo {
-  color: var(--color-logo-black);
-  font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
+  color: var(--color-logo-black);
+  font-family: "Raleway";
   text-decoration: none;
   padding: 25px 0;
 }
@@ -215,8 +237,7 @@ nav.flex-container {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
-
-.hero-title {
+.hero__title {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -227,8 +248,7 @@ nav.flex-container {
   text-align: center;
   margin: 0 auto;
 }
-
-.button {
+.hero__button {
   display: block;
   color: var(--main-white-color);
   background: var(--accent-color);
@@ -278,51 +298,6 @@ nav.flex-container {
           align-items: center;
 }
 
-.feature-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.do-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 0;
-}
-
-.do-list-item {
-  position: relative;
-  width: calc((100% - 60px) / 3);
-}
-
-.do-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.do-list-title {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.17;
-  padding-top: 27px;
-  background-color: var(--bg-color-do-list);
-  color: var(--main-white-color);
-}
-
-.section-title {
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -335,6 +310,51 @@ nav.flex-container {
 
 .description {
   line-height: 1.71;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.section-workList {
+  padding-top: 0;
+}
+.section-workList__title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.workList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+}
+.workList__item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
+.workList__item:not(:last-child) {
+  margin-right: 30px;
+}
+.workList__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.17;
+  padding-top: 27px;
+  background-color: var(--bg-color-do-list);
+  color: var(--main-white-color);
 }
 
 .wrapper {
@@ -361,15 +381,6 @@ nav.flex-container {
   left: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: var(--color-logo-black);
   font-size: 16px;
 }
@@ -457,15 +468,6 @@ nav.flex-container {
 }
 
 .team-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: var(--color-text-social-links);
   margin-top: 16px;
   margin-bottom: 30px;

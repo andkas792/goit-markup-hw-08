@@ -16,10 +16,10 @@ nav.flex-container {
 }
 
 .logo {
+    @include font(26px, 1.19);
+
     color: var(--color-logo-black);
     font-family: "Raleway";
-    font-size: 26px;
-    line-height: 1.19;
     text-decoration: none;
     padding: 25px 0;
 }
@@ -49,6 +49,8 @@ nav.flex-container {
 
 /* site-nav */
 .link {
+
+
     color: var(--secondary-text-color);
     font-family: "Roboto";
     font-weight: 500;
