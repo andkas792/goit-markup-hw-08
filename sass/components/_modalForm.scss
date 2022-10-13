@@ -1,7 +1,7 @@
 .modal-form-title {
+	@include font(20px, 1.15);
+
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.15;
 	text-align: center;
 	margin-bottom: 12px;
 	color: var(--secondary-text-color);
@@ -107,10 +107,8 @@
 }
 
 .accept {
-	/* position: relative; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center(flex, center, center);
+
 	margin-top: 20px;
 
 	&-link {
@@ -118,10 +116,10 @@
 	}
 
 	&__form {
+		@include flex-center(flex, center, center);
+
 		line-height: 1.71;
-		display: flex;
 		flex-direction: row-reverse;
-		align-items: center;
 		margin-right: 4px;
 	}
 }

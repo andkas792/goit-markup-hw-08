@@ -2,3 +2,9 @@
     font-size: $fs;
     line-height: $lh;
 }
+
+@mixin flex-center($df, $jc, $ai) {
+    display: $df;
+    justify-content: $jc;
+    align-items: $ai;    
+}

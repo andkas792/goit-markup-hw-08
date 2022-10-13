@@ -15,10 +15,10 @@
 	}
 
 	&-title {
+		@include font(14px, 1.14);
+
 		margin-bottom: 20px;
 		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.14;
 		text-transform: uppercase;
 		color: var(--main-white-color);
 	}
@@ -29,16 +29,14 @@
 	}
 
 	&-button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flex-center(flex, center, center);
+		@include font(16px, 1.88);
+
 		gap: 10px;
 		width: 200px;
 		height: 50px;
 		margin-left: 12px;
 		font-weight: 700;
-		font-size: 16px;
-		line-height: 1.88;
 		letter-spacing: 0.06em;
 		color: var(--main-white-color);
 		background-color: var(--accent-color);
