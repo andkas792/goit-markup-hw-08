@@ -327,7 +327,7 @@ ul.auth-nav.list.flex-container {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .feature-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -536,7 +536,7 @@ ul.auth-nav.list.flex-container {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team-card {
     width: calc((100% - 90px) / 4);
   }
@@ -642,7 +642,7 @@ ul.auth-nav.list.flex-container {
     width: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients-list-item {
     width: calc((100% - 150px) / 6);
   }
