@@ -82,6 +82,14 @@ form {
 	&:focus::placeholder {
 		color: var(--accent-color);
 	}
+
+	@media screen and(max-width:480px) {
+		height: 70px;		
+	}
+
+		@media screen and(min-width:768px) {
+			height: 90px;
+		}
 }
 
 .modal-form-btn {
@@ -119,8 +127,10 @@ form {
 }
 
 .accept {
-	@include flex-center(flex, center, center);
-
+	// @include flex-center(flex, center, center);
+	display: flex;
+	justify-content: left;
+	align-items: center;
 	margin-top: 20px;
 
 	@media screen and(min-width:768px) and(max-width:1199px) {
@@ -129,6 +139,11 @@ form {
 
 	&-link {
 		color: var(--accent-color);
+
+		@media screen and(max-width:450px) {
+			display: inline-block;
+			width: 10px;
+		}
 	}
 
 	&__form {
@@ -174,5 +189,9 @@ form {
 		background-size: contain;
 		background-origin: border-box;
 		border-color: var(--accent-color);
+	}
+
+	@media screen and(max-width:450px) {
+		margin-right: 2px;
 	}
 }

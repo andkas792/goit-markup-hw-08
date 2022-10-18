@@ -964,6 +964,7 @@ p.location {
   padding: 40px;
   max-width: 450px;
   width: calc(100% - 30px);
+  height: 609px;
   min-height: 480px;
   background-color: var(--main-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -982,12 +983,13 @@ p.location {
   .modal {
     min-width: 495px;
     height: 609px;
+    padding-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    height: 581px;
+    max-height: 581px;
   }
 }
 .modal__button {
@@ -1161,6 +1163,16 @@ p.location {
 .form-textarea:focus::placeholder {
   color: var(--accent-color);
 }
+@media screen and (max-width: 480px) {
+  .form-textarea {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-textarea {
+    height: 90px;
+  }
+}
 
 .modal-form-btn {
   display: block;
@@ -1204,9 +1216,9 @@ p.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1221,6 +1233,12 @@ p.location {
 }
 .accept-link {
   color: var(--accent-color);
+}
+@media screen and (max-width: 450px) {
+  .accept-link {
+    display: inline-block;
+    width: 10px;
+  }
 }
 .accept__form {
   display: -webkit-box;
@@ -1273,6 +1291,11 @@ p.location {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
+}
+@media screen and (max-width: 450px) {
+  .checkbox-icon {
+    margin-right: 2px;
+  }
 }
 
 .filter {
