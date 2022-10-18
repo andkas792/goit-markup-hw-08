@@ -1,6 +1,6 @@
 form {
 	@media screen and(min-width:768px) {
-		width: 370px;
+		width: 100%;
 	}
 }
 
@@ -20,8 +20,10 @@ form {
 	margin-bottom: 10px;
 
 	@media screen and(min-width:768px) {
-		width: 370px;
+		width: 100%;
 	}
+
+	
 }
 
 .form-label {
@@ -30,9 +32,6 @@ form {
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 
-	@media screen and(min-width:768px) {
-			width: 370px;
-		}
 }
 
 .form-input {
@@ -123,6 +122,10 @@ form {
 	@include flex-center(flex, center, center);
 
 	margin-top: 20px;
+
+	@media screen and(min-width:768px) and(max-width:1199px) {
+		justify-content: left;
+	}
 
 	&-link {
 		color: var(--accent-color);
