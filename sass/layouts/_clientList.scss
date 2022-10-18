@@ -1,15 +1,37 @@
+.clientList {
+	padding: 48px 0;
+
+	@media screen and (min-width: 768px) {
+		padding: 60px 0;
+	}
+
+	@media screen and (min-width: 1600px) {
+		padding: 94px 0;
+	}
+}
+
 .clients-list {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 	color: var(--color-text-social-links);
 
 	&-item {
-		width: calc((100% - 150px) / 6);
+		width: calc((100% - 30px) / 2);
 		height: 92px;
+
+		@media screen and(min-width:768px) {
+			width: calc((100% - 60px) / 3);
+		}
+
+		@media screen and(min-width:1600px) {
+			width: calc((100% - 150px) / 6);
+		}
 	}
 
-	&-item:not(:last-child) {
-		margin-right: 30px;
-	}
+	// 	&-item:not(:last-child) {
+	// 		margin-right: 30px;
+	// 	}
 }
 
 .client-icon {

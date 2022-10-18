@@ -8,7 +8,11 @@
 }
 
 nav.flex-container {
-	gap: 93px;
+	gap: 70px;
+
+    @media screen and(min-width:1600px) {
+        gap:93px;
+    }
 }
 
 .site-nav {
@@ -85,7 +89,17 @@ nav.flex-container {
 
 .auth-nav {
 	margin-left: auto;
-	gap: 30px;
+    flex-direction: column;
+    gap: 10px;
+    
+    @media screen and(min-width:1600px) {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+ul.auth-nav.list.flex-container {
+    align-items: center;
 }
 
 .contact-link {
@@ -96,6 +110,8 @@ nav.flex-container {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+    padding: 0;
+    
 
 	&:hover,
 	&:focus {
@@ -107,6 +123,7 @@ nav.flex-container {
 
 .envelope,
 .smartphone {
-	margin-right: 10px;
+	margin-right: 8px;
 	fill: currentColor;
 }
+
