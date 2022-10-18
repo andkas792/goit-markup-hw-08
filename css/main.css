@@ -17,6 +17,10 @@
   --bg-color-btn: #188ce8;
 }
 
+html {
+  min-width: 660px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -34,11 +38,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   background: var(--primary-bg-color);
-}
-@media screen and (max-width: 767px) {
-  body {
-    min-width: 660px;
-  }
 }
 
 .no-scroll {
