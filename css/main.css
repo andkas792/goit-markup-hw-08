@@ -17,10 +17,6 @@
   --bg-color-btn: #188ce8;
 }
 
-html {
-  min-width: 660px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
