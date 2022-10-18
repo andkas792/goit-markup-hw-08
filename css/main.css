@@ -1401,4 +1401,10 @@ p.location {
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.88;
+}
+
+@media screen and (min-width: 768px) {
+  .div-filter {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
