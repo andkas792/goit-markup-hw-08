@@ -837,7 +837,6 @@ ul.auth-nav.list.flex-container {
 
 .link-footer {
   display: block;
-  margin-bottom: 8px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   line-height: 1.71;
@@ -847,6 +846,10 @@ ul.auth-nav.list.flex-container {
   color: var(--accent-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-footer.mail {
+  margin-bottom: 8px;
 }
 
 p.location {
