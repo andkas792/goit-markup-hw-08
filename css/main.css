@@ -722,6 +722,7 @@ ul.auth-nav.list.flex-container {
   }
 }
 .footer-btn {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,7 +730,6 @@ ul.auth-nav.list.flex-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 450px;
 }
 @media screen and (min-width: 1600px) {
   .footer-btn {
@@ -741,7 +741,11 @@ ul.auth-nav.list.flex-container {
         -ms-flex-align: end;
             align-items: end;
     width: 570px;
+    margin-left: auto;
   }
+}
+.footer-subscribe {
+  width: 100%;
 }
 @media screen and (min-width: 1600px) {
   .footer-subscribe {
@@ -871,7 +875,6 @@ p.location {
 }
 
 .input-email {
-  width: 450px;
   height: 50px;
   padding-left: 15px;
   color: var(--contacts-footer);
@@ -881,6 +884,13 @@ p.location {
   background-color: rgb(47, 48, 58);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .input-email {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1600px) {
   .input-email {

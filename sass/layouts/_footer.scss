@@ -37,18 +37,21 @@
 	}
 
 	&-btn {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		width: 450px;
 
 		@media screen and(min-width:1600px) {
 			flex-direction: row;
 			align-items: end;
 			width: 570px;
+			margin-left: auto;
 		}
 	}
 
 	&-subscribe {
+		width: 100%;
+
 		@media screen and(min-width:1600px) {
 			margin-left: auto;
 		}
@@ -166,7 +169,6 @@ p.location {
 }
 
 .input-email {
-	width: 450px;
 	height: 50px;
 	padding-left: 15px;
 	color: var(--contacts-footer);
@@ -176,6 +178,12 @@ p.location {
 	background-color: rgba(47, 48, 58, 1);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
+
+	@media screen and(min-width:768px) {
+		width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	@media screen and(min-width:1600px) {
 		width: 358px;
