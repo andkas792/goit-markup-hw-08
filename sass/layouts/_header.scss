@@ -114,6 +114,14 @@ nav.flex-container {
 
 ul.auth-nav.list.flex-container {
     align-items: center;
+
+	@media screen and(max-width:1023px) {
+			flex-direction: column;
+		}
+
+	@media screen and(min-width:1024px) {
+		flex-direction: row;
+	}
 }
 
 .contact-link {

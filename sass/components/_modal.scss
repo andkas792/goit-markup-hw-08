@@ -18,8 +18,7 @@
 
 .modal {
 	@media screen and(max-width:767px) {
-		padding: 20px;
-		
+		padding: 20px;  		
 	}
 
 	position: absolute;
@@ -28,7 +27,7 @@
 	padding: 40px;
 	max-width: 450px;
 	width: calc(100% - 30px);
-	height: 609px;
+	// height: 609px;
 	max-height: calc(100% - 20px);
 	// min-height: 480px;
 	background-color: var(--main-white-color);
@@ -39,8 +38,6 @@
 
 	@media screen and(min-width:768px) and (max-width:1199px) {
 		min-width: 495px;
-		// height: 609px;
-		padding-top: 10px;
 	}
 
 	@media screen and(min-width:1200px) {
