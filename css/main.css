@@ -37,6 +37,14 @@ body {
   background: var(--primary-bg-color);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
 img {
   display: block;
   width: 100%;
