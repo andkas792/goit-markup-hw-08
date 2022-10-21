@@ -175,7 +175,6 @@ nav.flex-container {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 32px;
   padding-bottom: 32px;
 }
 .link:hover, .link:focus {
@@ -1109,8 +1108,8 @@ p.location {
   color: var(--accent-color);
 }
 
-.menu-contact {
-  margin-top: 300px;
+.wrapper-menu {
+  margin-top: 200px;
 }
 
 .menu-social {
