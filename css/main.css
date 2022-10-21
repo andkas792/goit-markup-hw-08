@@ -1062,8 +1062,10 @@ p.location {
   height: 100%;
   padding: 48px 40px;
   background-color: var(--main-white-color);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
   -webkit-transition: -webkit-transform 250ms var(--cubic);
   transition: -webkit-transform 250ms var(--cubic);
   transition: transform 250ms var(--cubic);
@@ -1072,8 +1074,8 @@ p.location {
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .menu-container .menu-toggle {

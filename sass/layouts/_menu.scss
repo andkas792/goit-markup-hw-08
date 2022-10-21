@@ -64,13 +64,14 @@
     height: 100%;
     padding: 48px 40px;
     background-color: var(--main-white-color);
-    transform: translateX(100%);
+    transform: scale(0);
+    transform-origin: top right;
     transition: transform 250ms var(--cubic);
     z-index: 10;
 }
 
 .menu-container.is-open {
-    transform: translateX(0);
+    transform: scale(1);
 }
 
 .menu-container .menu-toggle {
