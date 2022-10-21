@@ -1111,6 +1111,12 @@ p.location {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 390px) {
+  a.menu-tel.link.text {
+    font-size: 25px;
+  }
+}
+
 .wrapper-menu {
   margin-top: 200px;
 }
@@ -1474,6 +1480,16 @@ p.location {
     width: 10px;
   }
 }
+@media screen and (max-width: 410px) {
+  .accept-link {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 356px) and (max-width: 437) {
+  .accept-link {
+    margin-left: 6px;
+  }
+}
 .accept__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1490,6 +1506,11 @@ p.location {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin-right: 4px;
+}
+@media screen and (max-width: 410px) {
+  .accept__form {
+    font-size: 10px;
+  }
 }
 
 .checkbox-input {

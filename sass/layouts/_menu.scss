@@ -106,11 +106,11 @@
     color: var(--accent-color);
 }
 
-// .main-wrapper {
-//     @media screen and(max-width:400px) {
-//         scale: 0.6;
-//     }
-// }
+a.menu-tel.link.text {
+    @media screen and(max-width:390px) {
+        font-size: 25px;
+    }
+}
 
 .wrapper-menu {
     margin-top: 200px;

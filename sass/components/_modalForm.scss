@@ -157,6 +157,14 @@ form {
 			display: inline-block;
 			width: 10px;
 		}
+
+		@media screen and(max-width:410px) {
+			font-size: 10px;
+		}
+
+		@media screen and(min-width:356px) and(max-width:437) {
+			margin-left: 6px;
+		}
 	}
 
 	&__form {
@@ -165,6 +173,10 @@ form {
 		line-height: 1.71;
 		flex-direction: row-reverse;
 		margin-right: 4px;
+
+		@media screen and(max-width:410px) {
+			font-size: 10px;
+		}
 	}
 }
 
