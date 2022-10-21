@@ -1055,7 +1055,6 @@ p.location {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -1065,8 +1064,8 @@ p.location {
   background-color: var(--main-white-color);
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
   -webkit-transition: -webkit-transform 250ms var(--cubic);
   transition: -webkit-transform 250ms var(--cubic);
   transition: transform 250ms var(--cubic);
@@ -1077,6 +1076,8 @@ p.location {
 .menu-container.is-open {
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .menu-container .menu-toggle {
