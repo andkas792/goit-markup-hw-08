@@ -22,8 +22,6 @@ form {
 	@media screen and(min-width:768px) {
 		width: 100%;
 	}
-
-	
 }
 
 .form-label {
@@ -31,7 +29,6 @@ form {
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.01em;
-
 }
 
 .form-input {
@@ -84,12 +81,12 @@ form {
 	}
 
 	@media screen and(max-width:480px) {
-		height: 70px;		
+		height: 70px;
 	}
 
-		@media screen and(min-width:768px) {
-			height: 90px;
-		}
+	@media screen and(min-width:768px) {
+		height: 90px;
+	}
 }
 
 .modal-form-btn {
@@ -116,21 +113,21 @@ form {
 		background-color: var(--bg-color-btn);
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	}
-	
-	@media screen and(orientation: landscape) {
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-	
-		@include tablet {
-			margin: 30px auto;
-			margin-bottom: 0;
-		}
 
-		@include desktop {
-			margin: 30px auto;
-			margin-bottom: 0;
-		}
+	// @media screen and(orientation: landscape) {
+	// 	margin-bottom: 0;
+	// 	margin-top: 0;
+	// }
+
+	@include tablet {
+		margin: 30px auto;
+		margin-bottom: 0;
+	}
+
+	@include desktop {
+		margin: 30px auto;
+		margin-bottom: 0;
+	}
 }
 
 .form-icon {
@@ -169,8 +166,8 @@ form {
 		}
 
 		@media screen and(max-width:767px) {
-			// display: inline-block;
 			width: 10px;
+			font-size: 11px;
 		}
 
 		@media screen and(max-width:406px) {
@@ -193,8 +190,20 @@ form {
 		margin-right: 2px;
 		gap: 2px;
 
-		@media screen and(max-width:410px) {
+		@media screen and(min-width:320px) {
+			gap: 1px;
+		}
+
+		// @media screen and(min-width:411px)  and(max-width:418px) {
+		// 	font-size: 13px;
+		// }
+
+		@media screen and(max-width:424px) {
 			font-size: 10px;
+		}
+
+		@media screen and(min-width:425px) and(max-width:439px) {
+			font-size: 11px;
 		}
 	}
 }
