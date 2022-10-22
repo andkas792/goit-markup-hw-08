@@ -96,7 +96,9 @@ form {
 	display: block;
 	width: 200px;
 	height: 50px;
-	margin: 30px auto;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 0;
 	padding: 10px 52px;
 	color: var(--main-white-color);
 	background-color: var(--accent-color);
@@ -122,10 +124,12 @@ form {
 	
 		@include tablet {
 			margin: 30px auto;
+			margin-bottom: 0;
 		}
 
 		@include desktop {
 			margin: 30px auto;
+			margin-bottom: 0;
 		}
 }
 
@@ -142,24 +146,30 @@ form {
 .accept {
 	// @include flex-center(flex, center, center);
 	display: flex;
+	position: relative;
 	justify-content: left;
 	align-items: center;
 	margin-top: 20px;
 
-	@media screen and(min-width:768px) and(max-width:1199px) {
-		justify-content: left;
+
+
+	@include tablet {
+		justify-content: center;
 	}
 
 	&-link {
 		color: var(--accent-color);
 
-		@media screen and(max-width:450px) {
-			display: inline-block;
+		@media screen and(max-width:767px) {
+			// display: inline-block;
 			width: 10px;
 		}
 
-		@media screen and(max-width:410px) {
+		@media screen and(max-width:406px) {
 			font-size: 10px;
+			position: absolute;
+			right: 0px;
+			width: 30px;
 		}
 
 		@media screen and(min-width:356px) and(max-width:437) {
@@ -172,7 +182,8 @@ form {
 
 		line-height: 1.71;
 		flex-direction: row-reverse;
-		margin-right: 4px;
+		margin-right: 2px;
+		gap: 2px;
 
 		@media screen and(max-width:410px) {
 			font-size: 10px;

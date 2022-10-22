@@ -12,6 +12,10 @@
 	}
 }
 
+a.link.site-nav__link {
+	padding: 32px 0;
+}
+
 .header {
 	background-color: var(--main-white-color);
 	border-bottom: 1px solid var(--header-border-color);
@@ -72,7 +76,7 @@ nav.flex-container {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-	padding-bottom: 32px;
+	// padding-bottom: 32px;
 
 	&:hover,
 	&:focus {
@@ -112,13 +116,17 @@ nav.flex-container {
 }
 
 ul.auth-nav.list.flex-container {
-    align-items: center;
+	align-items: baseline;
+	
+	@media screen and(min-width:1200px) {
+		align-items: center;
+	}
 
 	@media screen and(max-width:1023px) {
 			flex-direction: column;
 		}
 
-	@media screen and(min-width:1024px) {
+	@media screen and(min-width:1200px) {
 		flex-direction: row;
 	}
 }

@@ -16,6 +16,7 @@ body {
 	font-size: 14px;
 	letter-spacing: 0.03em;
 	background: var(--primary-bg-color);
+	overflow-x: hidden;
 }
 
 .no-scroll {
@@ -46,11 +47,23 @@ ul {
 }
 
 .container {
-	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
 
+	@include mobile {
+		width: 480px;
+	}
+
+	@include  tablet {
+		width: 768px;
+	}
+
+	@include desktop {
+		width: 1200px;
+	}
+ 
 }
 
 .flex-container {
@@ -60,7 +73,7 @@ ul {
 .section {
 	padding: 60px 0;
 
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: 1200px) {
 		padding: 94px 0;
 	}
 	&-title {
@@ -72,7 +85,7 @@ ul {
 		color: var(--secondary-text-color);
 		margin-bottom: 30px;
 
-		@media screen and (min-width: 1600px) {
+		@media screen and (min-width: 1200px) {
 			font-size: 36px;
 			margin-bottom: 50px;
 		}

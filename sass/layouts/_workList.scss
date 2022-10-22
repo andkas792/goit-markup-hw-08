@@ -1,4 +1,4 @@
-@media screen and(max-width:1600px) {
+@media screen and(max-width:1199px) {
     .section-workList {
         display: none;
     }
@@ -32,6 +32,7 @@
 
 	&__title {
 		@include font(14px, 1.17);
+		@include flex-center(flex, center, center);
 
 		position: absolute;
 		left: 0;
@@ -40,7 +41,6 @@
 		height: 70px;
 		text-align: center;
 		text-transform: uppercase;
-		padding-top: 27px;
 		background-color: var(--bg-color-do-list);
 		color: var(--main-white-color);
 	}
