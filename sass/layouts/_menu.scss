@@ -57,15 +57,15 @@
 	height: 100%;
 	padding: 48px 40px;
 	background-color: var(--main-white-color);
-	transform: scale(0);
-	transform-origin: top right;
+	transform: translateY(-100%);
+	// transform-origin: top right;
 	transition: transform 250ms var(--cubic);
 	z-index: 10;
 }
 
 .menu-container.is-open {
-	transform: scale(1);
-	transform-origin: bottom left;
+	transform: translateY(0);
+	// transform-origin: bottom left;
 }
 
 .menu-container .menu-toggle {
