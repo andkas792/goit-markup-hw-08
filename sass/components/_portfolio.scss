@@ -54,11 +54,10 @@
 
 .work-list-item {
 	
-	@media screen and(min-width:768px) {
+	@include tablet {
 		width: calc((100% - 30px) / 2);
 	}
-
-    @media screen and(min-width:1600px) {
+	@include desktop {
         width: calc((100% - 60px) / 3);
     }
 }

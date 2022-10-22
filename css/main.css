@@ -1718,7 +1718,7 @@ p.location {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .work-list-item {
     width: calc((100% - 60px) / 3);
   }
