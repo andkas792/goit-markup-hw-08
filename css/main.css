@@ -1555,6 +1555,12 @@ p.location {
           align-items: center;
   margin-top: 20px;
 }
+@media screen and (min-width: 410px) and (max-width: 441px) {
+  .accept {
+    position: relative;
+    width: calc(100% - 35px);
+  }
+}
 @media screen and (min-width: 768px) {
   .accept {
     -webkit-box-pack: center;
@@ -1564,6 +1570,12 @@ p.location {
 }
 .accept-link {
   color: var(--accent-color);
+}
+@media screen and (min-width: 410px) and (max-width: 441px) {
+  .accept-link {
+    position: absolute;
+    right: 25px;
+  }
 }
 @media screen and (max-width: 767px) {
   .accept-link {

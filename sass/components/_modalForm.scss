@@ -151,7 +151,10 @@ form {
 	align-items: center;
 	margin-top: 20px;
 
-
+	@media screen and(min-width:410px) and(max-width:441px) {
+		position: relative;
+		width: calc(100% - 35px);
+	}
 
 	@include tablet {
 		justify-content: center;
@@ -159,6 +162,11 @@ form {
 
 	&-link {
 		color: var(--accent-color);
+
+		@media screen and(min-width:410px) and(max-width:441px) {
+			position: absolute;
+			right: 25px;
+		}
 
 		@media screen and(max-width:767px) {
 			// display: inline-block;
